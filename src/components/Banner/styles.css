@@ -1,0 +1,49 @@
+.countdown-container {
+  background-image: url("../../assets/Mountain.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.countdown-container h1 {
+  font: 400 1.5rem "Poppins";
+}
+
+.countdown-timer-area {
+  display: block;
+}
+
+.countdown-timer-area .timer-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  line-height: 0.5rem;
+}
+.countdown-timer-area .timer-area .legend {
+  font: 400 2rem "Poppins";
+}
+.countdown-timer-area .timer-area span {
+  color: #dcdcdc;
+}
+
+@media (min-width: 800px) {
+  .countdown-timer-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .countdown-timer-area .timer-area + .timer-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 10em;
+  }
+}
